@@ -1,7 +1,6 @@
 "use client";
 import {
   ChevronRight,
-  Facebook,
   Github,
   Linkedin,
   Mail,
@@ -11,6 +10,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Metadata } from "next";
 
 interface ContactFormData {
   name: string;
@@ -18,6 +18,11 @@ interface ContactFormData {
   company: string;
   message: string;
 }
+
+export const metadata: Metadata = {
+  title: "Ai Writer Pro Contact",
+  description: "AI-powered writing assistant to enhance your writing experience",
+};
 
 interface FormEventWithTarget extends React.FormEvent<HTMLFormElement> {
   target: EventTarget & HTMLFormElement;
