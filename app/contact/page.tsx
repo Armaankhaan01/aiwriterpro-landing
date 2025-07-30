@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import type { Metadata } from "next";
 
 
 interface ContactFormData {
@@ -20,10 +19,6 @@ interface ContactFormData {
   message: string;
 }
 
-export const metadata: Metadata = {
-  title: "Ai Writer Pro Contact",
-  description: "AI-powered writing assistant to enhance your writing experience",
-};
 
 interface FormEventWithTarget extends React.FormEvent<HTMLFormElement> {
   target: EventTarget & HTMLFormElement;

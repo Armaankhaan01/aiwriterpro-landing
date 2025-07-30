@@ -2,13 +2,9 @@
 import { pricingTiers } from "@/lib/constants";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-import type { Metadata } from "next";
 
 
-export const metadata: Metadata = {
-  title: "Ai Writer Pro Pricing",
-  description: "AI-powered writing assistant to enhance your writing experience",
-};
+
 const PricingPage = () => {
   return (
     <div className="pt-24 pb-12">
