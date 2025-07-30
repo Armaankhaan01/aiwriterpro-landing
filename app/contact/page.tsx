@@ -10,7 +10,8 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Metadata } from "next";
+import type { Metadata } from "next";
+
 
 interface ContactFormData {
   name: string;
